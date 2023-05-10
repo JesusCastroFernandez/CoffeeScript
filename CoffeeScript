@@ -1,0 +1,24 @@
+# Función para sumar dos números
+sum = (a, b) ->
+  a + b
+
+# Función para restar dos números
+subtract = (a, b) ->
+  a - b
+
+# Función para multiplicar dos números
+multiply = (a, b) ->
+  a * b
+
+# Función para dividir dos números
+divide = (a, b) ->
+  if b == 0
+    throw new Error("No se puede dividir por cero")
+  else
+    a / b
+
+# Ejemplos de uso
+console.log(sum(2, 3))      # Resultado: 5
+console.log(subtract(5, 2)) # Resultado: 3
+console.log(multiply(4, 6)) # Resultado: 24
+console.log(divide(8, 2))   # Resultado: 4
